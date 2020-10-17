@@ -2,7 +2,7 @@
 in a given array */
 #include <bits/stdc++.h> 
 using namespace std; 
-  
+/*  
 // function to return sum of elements  
 // in an array of size n  
 int sum(int arr[], int n)  
@@ -15,14 +15,19 @@ int sum(int arr[], int n)
     sum += arr[i];  
   
     return sum;  
-}  
+}  */
   
 // Driver code 
 int main()  
 {  
     int arr[] = {12, 3, 4, 15};  
     int n = sizeof(arr) / sizeof(arr[0]);  
-    cout << "Sum of given array is " << sum(arr, n);  
+    int sum=0;
+    for( int i=0;i<n;i++)
+    {
+      sum+=arr[i];
+    }
+    cout << "Sum of given array is " << sum;  
     return 0;  
 }  
   
